@@ -1,0 +1,29 @@
+env:
+  es6: true
+  node: true
+  jest: true
+
+extends:
+  - eslint:recommended
+  - plugin:node/recommended
+
+parserOptions:
+  ecmaVersion: 2020
+
+rules:
+  arrow-spacing: error
+  complexity: [ error, 6 ]
+  curly: [ error, all ]
+  indent: [ error, 2 ]
+  key-spacing: [ error, { beforeColon: false } ]
+  linebreak-style: [ error, unix ]
+  no-console: [ error ]
+  no-process-exit: off
+  no-trailing-spaces: [ error ]
+  quotes: [ error, single ]
+  semi: [ error, always ]
+  space-infix-ops: [ error ]
+  strict: [ error, global ]
+  no-shadow: error
+  node/no-unpublished-require: off
+  node/no-extraneous-require: off

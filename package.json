@@ -2,9 +2,17 @@
   "name": "immersve.github.io",
   "packageManager": "yarn@3.1.1",
   "scripts": {
+    "build": "rm -rf dist && yarn build-eleventy && yarn build-css && yarn build-cachekill",
+    "build-eleventy": "eleventy --config eleventy.config.js",
+    "build-css": "echo no css to build",
+    "build-cachekill": "cachekill --rename --source 'dist/css/*' --target 'dist/**/*.html'",
+    "lint": "eslint .",
     "start": "eleventy --config eleventy.config.js --serve --port 8080"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "cachekill": "^3.0.2",
+    "eslint": "^8.3.0",
+    "eslint-plugin-node": "^11.1.0"
   }
 }
