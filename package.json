@@ -1,4 +1,10 @@
 {
   "name": "immersve.github.io",
-  "packageManager": "yarn@3.1.1"
+  "packageManager": "yarn@3.1.1",
+  "scripts": {
+    "start": "eleventy --config eleventy.config.js --serve --port 8080"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
 }
