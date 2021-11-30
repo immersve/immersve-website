@@ -1,3 +1,7 @@
 'use strict';
 
-module.exports = [];
+const glob = require('glob');
+
+module.exports = glob
+  .sync('./*.plugin.js', { cwd: __dirname })
+  .map(require);

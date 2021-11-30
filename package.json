@@ -4,15 +4,26 @@
   "scripts": {
     "build": "rm -rf dist && yarn build-eleventy && yarn build-css && yarn build-cachekill",
     "build-eleventy": "eleventy --config eleventy.config.js",
-    "build-css": "echo no css to build",
+    "build-css": "tailwindcss -i src/css/styles.css -o dist/css/styles.css --minify",
     "build-cachekill": "cachekill --rename --source 'dist/css/*' --target 'dist/**/*.html'",
     "lint": "eslint .",
-    "start": "eleventy --config eleventy.config.js --serve --port 8080"
+    "start": "concurrently yarn:start-eleventy yarn:start-css",
+    "start-eleventy": "eleventy --config eleventy.config.js --serve --port 8080",
+    "start-css": "tailwindcss -i src/css/styles.css -o dist/css/styles.css --watch"
   },
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@tailwindcss/typography": "^0.4.1",
     "cachekill": "^3.0.2",
+    "concurrently": "^6.4.0",
+    "convict": "^6.2.1",
     "eslint": "^8.3.0",
-    "eslint-plugin-node": "^11.1.0"
+    "eslint-plugin-node": "^11.1.0",
+    "glob": "^7.2.0",
+    "json5": "^2.2.0",
+    "luxon": "^2.1.1",
+    "postcss": "^8.4.4",
+    "postcss-cli": "^9.0.2",
+    "tailwindcss": "^2.2.19"
   }
 }
