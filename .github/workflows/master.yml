@@ -1,6 +1,9 @@
 name: Build + Deploy GitHub Pages
 
 on:
+  pull_request:
+    branches:
+      - master
   push:
     branches:
       - master
@@ -17,6 +20,11 @@ jobs:
       - run: yarn lint
       - run: yarn build
         env: { ENV: prod }
+      - run: cp CNAME dist
+      - uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
 
   deploy:
     needs: build
@@ -26,15 +34,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
+      - uses: actions/download-artifact@v3
         with:
-          node-version: '14.x'
-      - run: yarn install
-      - run: yarn build
-        env: { ENV: prod }
-      - run: cp CNAME dist
+          name: dist
+          path: dist
       - uses: JamesIves/github-pages-deploy-action@4.1.7
         with:
           branch: gh-pages
           folder: dist
-
