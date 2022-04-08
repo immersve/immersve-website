@@ -4,7 +4,7 @@
   "scripts": {
     "build": "rm -rf dist && yarn build-eleventy && yarn build-css && yarn build-cachekill",
     "build-eleventy": "eleventy --config eleventy.config.js",
-    "build-css": "tailwindcss -i src/css/styles.css -o dist/css/styles.css --minify",
+    "build-css": "tailwindcss -i src/css/styles.css -o dist/css/styles.css --minify --purge dist/index.html",
     "build-cachekill": "cachekill --rename --source 'dist/css/*' --source 'dist/img/*' --target 'dist/**/*.html'",
     "lint": "eslint .",
     "start": "concurrently yarn:start-eleventy yarn:start-css",
