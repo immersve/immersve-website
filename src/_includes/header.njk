@@ -1,20 +1,24 @@
-<div class=" fixed w-full top-0 bg-black">
+<div class=" fixed w-full top-0 bg-black opacity-90">
   <div class="text-white lg:px-8 max-w-screen-xl mx-auto md:items-center">
-    <header class="overflow-hidden"  x-data="{ mobileMenu: false}">
-      <div class="relative z-10">
-        <div class="flex justify-between py-4">
+    <header class="" x-data="{ mobileMenu: false}">
+      <div class="z-10">
+        <div class="flex justify-between py-4 flex-row">
           <a href="/">
             <img class="h-9" src="/img/immersvelogo.svg" alt="logo placeholder">
           </a>
-          <div class="bg-green-500">
-            <a href="/" class="border-solid border-white rounded-full w-">
-            APP
-          </a>
-            <a href="/">
-            MINT
-          </a>
-            <div class="w-9 bg-red-500">
-              {#  #}
+          <div class="flex">
+            <div class="border-2 border-solid border-white rounded-full w-28">
+              <a href="/">
+                <p class="pt-1 text-center">APP</p>
+              </a>
+            </div>
+            <div class="border-2 border-solid border-white rounded-full w-28 ml-6">
+              <a href="/">
+                <p class="pt-1 text-center">MINT</p>
+              </a>
+            </div>
+            <div class="bg-white rounded-full w-9 ml-6">
+              <img class="w-4 m-auto" src="/img/hamburgermenu.png" alt="menu">
             </div>
           </div>
         </div>
