@@ -1,7 +1,42 @@
-<footer>
-  <div class="px-36">
-    <div class="w-12 h-1">
-      <h2 class="text-2xl font-medium sm:text-3xl lg:text-4xl">KEEP IN TOUCH</h2>
+<footer class="text-white lg:px-12 max-w-screen-xl mx-auto md:items-center pb-10">
+  <div>
+    <div class="flex justify-between">
+      <h2 class="text-2xl font-medium sm:text-3xl lg:text-4xl text-indigo-600">KEEP IN TOUCH</h2>
+      <div class="flex gap-6">
+        <a href="#" class="w-12">
+          <img src="/img/twitter-round.png" alt="twitter" class="aspect-square m-auto">
+        </a>
+        <a href="#" class="w-12">
+          <img src="/img/discord-round.png" alt="otto" class="aspect-square m-auto">
+        </a>
+        <a href="#" class="w-12">
+          <img src="/img/medium-round.png" alt="netx" class="aspect-square m-auto">
+        </a>
+        <a href="#" class="w-12">
+          <img src="/img/linkedin-round.png" alt="netx" class="aspect-square m-auto">
+        </a>
+      </div>
     </div>
+    <p class="mt-2 underline">
+      <a href="mailto:info@immersve.com" class="">info@immersve.com</a>
+    </p>
   </div>
+  <div class="mt-24">
+    <p>
+      Copyright &copy; 2021 <a href="https://immersve.com/">Immersve</a>. All rights reserved.
+    </p>
+  </div>
+  <div>
+    <p class="hidden" aria-hidden="true" >
+      {{ config.buildDate }}
+      <br>
+      {{ config.commitId }}
+    </p>
+  </div>
+
 </footer>
+
+{# <div class="px-6 pt-12 pb-20 text-white lg:px-12 lg:pt-24">
+        {# Page 1 #}
+{# <div class="grid max-w-screen-xl grid-cols-2 gap-8 mx-auto lg:gap-24 md:items-center h-screen">
+  #}
