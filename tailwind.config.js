@@ -5,6 +5,7 @@ module.exports = {
         immersvepink: "#ff5ff3",
         immersveblue: "#4ca5ff",
         immersvepurple: "#5434ff",
+        immersvenight: "#000F40",
       },
       fontFamily: {
         bebasneue: [`"Bebas Neue"`],
