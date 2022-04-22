@@ -1,0 +1,9 @@
+<svg id="mc_symbol" xmlns="http://www.w3.org/2000/svg" width="129.828" height="92" viewBox="0 0 129.828 92">
+  <rect id="Rectangle_28" data-name="Rectangle 28" width="129.828" height="92" fill="none"/>
+  <g id="Group_9" data-name="Group 9" transform="translate(15.261 15.333)">
+    <rect id="Rectangle_29" data-name="Rectangle 29" width="26.833" height="48.22" transform="translate(36.201 6.557)" fill="#ff5f00"/>
+    <path id="Path_21" data-name="Path 21" d="M375.616,300.667a30.613,30.613,0,0,1,11.713-24.11,30.667,30.667,0,1,0,0,48.22A30.614,30.614,0,0,1,375.616,300.667Z" transform="translate(-337.711 -269.999)" fill="#eb001b"/>
+    <path id="Path_22" data-name="Path 22" d="M445.575,300.667a30.666,30.666,0,0,1-49.616,24.11,30.671,30.671,0,0,0,0-48.22,30.665,30.665,0,0,1,49.616,24.11Z" transform="translate(-346.341 -270)" fill="#f79e1b"/>
+    <path id="Path_23" data-name="Path 23" d="M450.662,328.1v-.987h.4v-.2h-1.014v.2h.4v.987Zm1.968,0v-1.19h-.311l-.357.819-.358-.819h-.311v1.19h.219v-.9l.335.774h.228l.335-.776v.9Z" transform="translate(-354.353 -278.431)" fill="#f79e1b"/>
+  </g>
+</svg>

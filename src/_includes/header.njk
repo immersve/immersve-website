@@ -1,33 +1,46 @@
-<div class="bg-gray-900">
-
-  <header class="relative px-6 py-4 overflow-hidden text-gray-600 bg-gray-100 lg:px-12 lg:py-5"  x-data="{ mobileMenu: false}">
-    <img src="/img/urban-portal.jpg" alt="hero image" class="absolute inset-0 object-cover w-full h-full">
-    <div class="absolute inset-0 bg-gradient-to-br from-indigo-900">
-      &nbsp;
-    </div>
-    <div class="relative z-10">
-      <div class="relative flex items-center max-w-screen-xl mx-auto ">
-        <a href="/">
-          <img class="h-9 rounded-md" src="/img/immersve-2.png" alt="logo placeholder">
-        </a>
-        <a href="/">
-          <span class="px-4 text-white">Immersve</span>
-        </a>
-      </div>
-      <div class="max-w-screen-xl mx-auto mt-8 mb-8 text-left lg:mt-20 xl:mt-40 lg:mb-20 xl:mb-32">
-        <h2 class="text-2xl font-bold text-white sm:text-3xl md:text-4xl lg:text-5xl">DeFi for the Metaverse</h2>
-        <p class="max-w-xl mt-4 text-xl leading-relaxed text-white ">Elegantly integrated Web3 and real-world payment experiences.</p>
-        <div class="flex mt-8 lg:mt-12">
+<div class="fixed w-full top-0 bg-black opacity-90 font-montserrat">
+  <div class="text-white max-w-screen-xl mx-auto md:items-center">
+    <header class="" x-data="{ mobileMenu: false}">
+      <div class="z-10">
+        <div class="flex justify-between py-4 flex-row gap-6 px-6">
+          <a href="/" class="">
+            <img class="h-9 sm:hidden" src="/img/immersvesmall.svg" alt="logo placeholder">
+            <img class="h-9 hidden sm:flex" src="/img/immersvelogo.svg" alt="logo placeholder">
+          </a>
+          <div class="flex">
+            <div class="border-2 border-solid border-white rounded-full w-16 hover:bg-gray-200 hover:text-black sm:w-28">
+              <a href="/">
+                <p class="pt-1 text-center text-sm sm:text-base">APP</p>
+              </a>
+            </div>
+            <div class="border-2 border-solid border-white rounded-full w-16 ml-6 hover:bg-gray-200 hover:text-black sm:w-28">
+              <a href="/mint">
+                <p class="pt-1 text-center text-sm sm:text-base">MINT</p>
+              </a>
+            </div>
+            <button id="dropdownDefault" data-dropdown-toggle="dropdown" class="text-black bg-white font-medium text-sm text-center inline-flex items-center ml-6 w-9 rounded-full" type="button">
+              <img src="/img/hamburgermenu.png" alt="discord" class="px-3">
+            </button>
+            <!-- Dropdown menu -->
+            <div id="dropdown" class="hidden z-10 w-44 bg-white rounded-lg mt-32">
+              <ul class="py-1 text-sm text-black" aria-labelledby="dropdownDefault">
+                <li>
+                  <a href="/#ABOUTUS" class="block py-2 px-4 hover:bg-gray-300">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="/#ECOSYSTEM" class="block py-2 px-4 hover:bg-gray-300 ">ECOSYSTEM</a>
+                </li>
+                <li>
+                  <a href="#CONTACT" class="block py-2 px-4 hover:bg-gray-300">CONTACT</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="grid max-w-screen-xl grid-cols-2 col-gap-6 mx-auto mt-8 mb-12 space-y-5 md:px-6 lg:px-12 xl:px-4 sm:grid-cols-3 sm:space-y-3 xl:grid-cols-6 lg:mt-10 lg:mb-32">
-      </div>
     </div>
-    <div class="absolute bottom-0 left-0 right-0 -mb-1">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2400 100" class="text-black fill-current">
-        <path class="currentColor" d="M0,0c0,0,900,95,2400,0v100H0L0,0z"></path>
-      </svg>
-    </div>
+    <hr>
   </header>
-
 </div>
+</div>
+<script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
