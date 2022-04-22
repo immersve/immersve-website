@@ -9,5 +9,5 @@ module.exports = {
   url: `${baseUrl}/`,
   description: 'World\'s first multichain protocol',
   site_name: 'Immersve',
-  // img: `${baseUrl}/img/`,
+  img: `${baseUrl}/img/previewlogo.png`,
 };
